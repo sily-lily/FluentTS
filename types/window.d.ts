@@ -8,19 +8,19 @@
 
 */
 
-interface DialogButton {
+export interface DialogButton {
     Title: string;
     Callback?: () => void;      // Optional callback,
                                 // --> runs code after being pressed.
 }
 
-interface DialogOptions {
+export interface DialogOptions {
     Title: string;              // The title (header) of your dialog.
     Content: string;            // The description of your dialog.
     Buttons?: DialogButton[];   // Optional array of buttons.
 }
 
-interface Window {
+export interface Window {
     /**
      * Adds a new tab to the current Window object.
      * @param args - Array with two arguments: Title and Icon
