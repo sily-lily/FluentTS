@@ -25,7 +25,7 @@ export interface Window {
      * Adds a new tab to the current Window object.
      * @param args - Array with two arguments: Title and Icon
      */
-    AddTab(args: [Title: string, Icon: string]): void;
+    AddTab(args: { Title: string; Icon: string }): void;
 
     /**
      * Make the library focus on a certain tab.
