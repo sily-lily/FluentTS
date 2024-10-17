@@ -11,12 +11,12 @@ import { Color3 } from "./color3";
 
 */
 
-interface ColorPickerOptions {
+export interface ColorPickerOptions {
     Title: string;
     Default: Color3;
 }
 
-interface ColorPicker {
+export interface ColorPicker {
     /**
      * Set the HSV values based on RGB input.
      * @param r - Red value (0 - 255)
