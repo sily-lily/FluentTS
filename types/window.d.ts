@@ -1,3 +1,5 @@
+import { Tab } from './tab'; // Import Tab from the tab.d.ts
+
 /*
 
     Includes: .AddTab
@@ -23,9 +25,10 @@ export interface DialogOptions {
 export interface Window {
     /**
      * Adds a new tab to the current Window object.
-     * @param args - Array with two arguments: Title and Icon
+     * @param args - Object with two properties: Title and Icon
+     * @returns A Tab object, allowing further actions on the tab.
      */
-    AddTab(args: { Title: string; Icon: string }): void;
+    AddTab(args: { Title: string; Icon: string }): Tab;
 
     /**
      * Make the library focus on a certain tab.
