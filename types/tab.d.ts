@@ -36,7 +36,8 @@ export interface Tab {
      */
     AddInput(id: string, options: {
         Title: string;
-        Default: string;
+        Description: string;
+        Default?: string;
         Placeholder?: string;
         Numeric?: boolean;
         Finished?: boolean;
@@ -73,7 +74,7 @@ export interface Tab {
     AddKeybind(id: string, options: {
         Title: string;
         Mode: 'Always' | 'Toggle' | 'Hold';
-        Default: string;
+        Default?: string;
         Callback?: (value: boolean) => void;
         ChangedCallback?: (newKey: string) => void;
     }): void;
@@ -85,7 +86,7 @@ export interface Tab {
      */
     AddToggle(id: string, options: {
         Title: string;
-        Default: boolean;
+        Default?: boolean;
     }): void;
 
     /**
@@ -96,7 +97,7 @@ export interface Tab {
     AddSlider(id: string, options: {
         Title: string;
         Description?: string;
-        Default: number;
+        Default?: number;
         Min: number;
         Max: number;
         Rounding?: number;
@@ -109,6 +110,6 @@ export interface Tab {
      */
     AddParagraph(options: {
         Title: string;
-        Content: string;
+        Content?: string;
     }): void;
 }
