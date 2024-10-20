@@ -13,7 +13,12 @@ export interface Fluent {
      * Notifies the user with a custom notification.
      * @param data - Data for the notification.
      */
-    Notify(data: {}): void;
+    Notify(data: {
+        Title: string;
+        Content: string;
+        SubContent?: string;
+        Duration: number;
+    }): void;
 
     /**
      * Creates a new window.
