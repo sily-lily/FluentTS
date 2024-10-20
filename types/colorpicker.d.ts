@@ -12,8 +12,8 @@ import { Color3 } from "./color3";
 */
 
 export interface ColorPickerOptions {
-    Title: string;
-    Default: Color3;
+    Title: string;     // The title of the color picker.
+    Default?: Color3;  // The default value of the color picker. (optional)
 }
 
 export interface ColorPicker {
