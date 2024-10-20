@@ -13,10 +13,11 @@
 */
 
 export interface DropdownOptions {
-    Title: string;              // The title (header) of the dropdown.
-    Values: string[];           // Array of values to display in the dropdown.
-    Multi?: boolean;            // Allow multiple selections. (multiple choices) (optional)
-    Default?: number | string;  // Default selected value, by index or value. (optional)
+    Title: string;                                  // The title (header) of the dropdown.
+    Values: string[];                               // Array of values to display in the dropdown.
+    Multi?: boolean;                                // Allow multiple selections. (multiple choices) (optional)
+    Default?: number | string;                      // Default selected value, by index or value. (optional)
+    Callback: (value: string | number) => void;     // Function that runs code when the input changes.
 }
 
 export interface Dropdown {
