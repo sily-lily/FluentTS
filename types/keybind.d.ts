@@ -27,9 +27,8 @@ export interface Keybind {
     /**
      * Sets the keybind value and mode.
      * @param key - The key to bind. (e.g., "LeftControl", "MB2" for MouseButton2)
-     * @param mode - The mode to set. (e.g., "Toggle", "Hold")
      */
-    SetValue(key: string, mode: "Always" | "Toggle" | "Hold"): void;
+    SetValue(key: string): void;
 
     /**
      * Registers a function to be called when the keybind is pressed.
@@ -41,7 +40,7 @@ export interface Keybind {
      * Registers a function to be called when the keybind value changes.
      * @param callback - Customizable function that calls when you modify the keybind value.
      */
-    OnChanged(callback: () => void): void;
+    OnChanged(callback: (value: string) => void): void;
 
     /**
      * Simulates a click event on the keybind.
