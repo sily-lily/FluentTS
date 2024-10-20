@@ -17,7 +17,7 @@ export interface Toggle {
      * Registers a function to be called when the toggle state changes.
      * @param callback - Customizable function to call.
      */
-    OnChanged(callback: () => void): void;
+    OnChanged(callback: (value: boolean) => void): void;
 
     /**
      * Sets the value of the toggle:
