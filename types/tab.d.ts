@@ -1,5 +1,10 @@
 import { ColorPicker } from './colorpicker';
 import { Color3 } from './color3';
+import { Input } from 'fluentts/types/input';
+import { Dropdown } from 'fluentts/types/dropdown';
+import { Keybind } from 'fluentts/types/keybind';
+import { Toggle } from 'fluentts/types/toggle';
+import { Slider } from 'fluentts/types/slider';
 
 /*
 
@@ -42,7 +47,7 @@ export interface Tab {
         Numeric?: boolean;
         Finished?: boolean;
         Callback?: (value: string) => void;
-    }): void;
+    }): Input;
 
     /**
      * Adds a button to the tab.
@@ -64,7 +69,7 @@ export interface Tab {
         Values: string[];
         Multi?: boolean;
         Default?: number;
-    }): void;
+    }): Dropdown;
 
     /**
      * Adds a keybind to the tab.
@@ -77,7 +82,7 @@ export interface Tab {
         Default?: string;
         Callback?: (value: boolean) => void;
         ChangedCallback?: (newKey: string) => void;
-    }): void;
+    }): Keybind;
 
     /**
      * Adds a toggle to the tab.
@@ -87,7 +92,7 @@ export interface Tab {
     AddToggle(id: string, options: {
         Title: string;
         Default?: boolean;
-    }): void;
+    }): Toggle;
 
     /**
      * Adds a slider to the tab.
@@ -102,7 +107,7 @@ export interface Tab {
         Max: number;
         Rounding?: number;
         Callback?: (value: number) => void;
-    }): void;
+    }): Slider;
 
     /**
      * Adds a paragraph to the tab.
