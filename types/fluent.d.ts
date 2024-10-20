@@ -1,10 +1,10 @@
 import { Window } from './window';
 
 /*
-
-*/
     Includes: .Notify,
               .CreateWindow
+*/
+
 /**
  * Fluent interface that provides methods to interact with the Fluent UI system.
  */
