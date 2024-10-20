@@ -20,7 +20,7 @@ export interface Input {
      * Registers a funciton to be called when the input value changes.
      * @param callback - Function that runs code you tell it to.
      */
-    OnChanged(callback: () => void): void;
+    OnChanged(callback: (value: string) => void): void;
 
     /**
      * Destroys the input object.
