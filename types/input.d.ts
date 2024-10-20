@@ -7,11 +7,12 @@
 
 export interface InputOptions {
     Title: string;                                  // Title of the input.
-    Default: string;                                // The default value for the input.
+    Description?: string;                           // Explains what the input is actually about. (optional)
+    Default?: string;                               // The default value for the input. (optional)
     Placeholder?: string;                           // Text that shows before a response is added. (optional)
     Numeric?: boolean;                              // Whether numbers-only is allowed. (optional)
-    Finished?: boolean;                             // Whether the callback is only triggered by pressing 'enter'.
-    Callback?: (value: string | number) => void;    // Function that runs code when the input changes.
+    Finished?: boolean;                             // Whether the callback is only triggered by pressing 'enter'. (optional)
+    Callback: (value: string | number) => void;     // Function that runs code when the input changes.
 }
 
 export interface Input {
