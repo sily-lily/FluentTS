@@ -7,8 +7,9 @@
 */
 
 export interface ToggleOptions {
-    Title: string;      // The title (header) of the toggle.
-    Default: boolean;   // The default state of the toggle. (true or false)
+    Title: string;       // The title (header) of the toggle.
+    Description: string; // Explains what the toggle does.
+    Default?: boolean;   // The default state of the toggle. (true or false)
 }
 
 export interface Toggle {
