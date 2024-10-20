@@ -4,7 +4,7 @@ TypeScript types for Roblox-TS, allowing you to effectively use the Fluent libra
 ### 🔌 Installation
 
 ```
-npm install --save-dev github:richie0866/rbxts-hax
+npm install --save-dev github:mr-suno/fluentTS
 ```
 
 ---
