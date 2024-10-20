@@ -17,19 +17,19 @@ along with creating a tab:
 const fluent = load_url('https://github.com/mr-suno/Fluent/releases/latest/download/main.lua') as Fluent;
 
 const window = fluent.CreateWindow({
-    'Title': 'Starry Universal',
-    'SubTitle': 'github.com/mr-suno/Starry',
-    'TabWidth': 160,
-    'Size': UDim2.fromOffset(625, 570 / divider),
-    'Acrylic': false,
-    'Theme': 'Darker',
-    'MinimizeKey': Enum.KeyCode.LeftControl
+    'Title': 'Your Script',                         // Title of your library
+    'SubTitle': 'Any subheader',                    // Content next to title
+    'TabWidth': 160,                                // Changes how large (X axis) the tabs are
+    'Size': UDim2.fromOffset(625, 570),             // Offset: X, Y (Use Udim2.fromScale() for Scale!)
+    'Acrylic': false,                               // Adds blur if true
+    'Theme': 'Darker',                              // Changes theme (No docs, sorry!)
+    'MinimizeKey': Enum.KeyCode.LeftControl         // Changes keybind (Enum)
 });
 
-const tabs = {
+const tabs = {                                      // Inside of a table is optional
     main: window.AddTab({
         Title: 'Main',
-        Icon: '' // Visit https://lucide.dev/icons for Icons! (Not all are supported!)
+        Icon: ''                                    // lucide.dev/icons for Icons!
     }),
 }
 
