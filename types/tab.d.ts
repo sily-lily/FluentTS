@@ -102,7 +102,7 @@ export interface Tab {
     AddSlider(id: string, options: {
         Title: string;
         Description?: string;
-        Default?: number;
+        Default: number;
         Min: number;
         Max: number;
         Rounding?: number;
