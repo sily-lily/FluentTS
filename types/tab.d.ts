@@ -68,7 +68,8 @@ export interface Tab {
         Title: string;
         Values: string[];
         Multi?: boolean;
-        Default?: number;
+        Default?: string;
+        Callback: (value: string | number) => void;
     }): Dropdown;
 
     /**
