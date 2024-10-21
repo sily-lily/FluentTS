@@ -105,7 +105,7 @@ export interface Tab {
         Default: number;
         Min: number;
         Max: number;
-        Rounding?: number;
+        Rounding: number;
         Callback?: (value: number) => void;
     }): Slider;
 
