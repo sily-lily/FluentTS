@@ -9,7 +9,7 @@
 export interface SliderOptions {
     Title: string;                          // The title (header) of the slider.
     Description?: string;                   // The description of the slider, what it's about. (optional)
-    Default?: number;                        // The default (starting) value for the slider. (min through max) (optional)
+    Default: number;                        // The default (starting) value for the slider. (min through max) (optional)
     Min: number;                            // The minimum value for the slider.
     Max: number;                            //     maximum
     Rounding?: number;                      // Where the decimal is placed. (Lua index starts at 1) (optional)
