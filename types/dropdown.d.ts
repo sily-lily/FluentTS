@@ -14,6 +14,7 @@
 
 export interface DropdownOptions {
     Title: string;                                  // The title (header) of the dropdown.
+    Description?: string;                           // The description of the dropdown, explains what it does.
     Values: string[];                               // Array of values to display in the dropdown.
     Multi?: boolean;                                // Allow multiple selections. (multiple choices) (optional)
     Default?: string;                               // Default selected value, by index or value. (optional)
