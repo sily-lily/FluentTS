@@ -92,7 +92,9 @@ export interface Tab {
      */
     AddToggle(id: string, options: {
         Title: string;
+        Description: string;
         Default?: boolean;
+        Callback?: (value: boolean) => void;
     }): Toggle;
 
     /**
