@@ -66,6 +66,7 @@ export interface Tab {
      */
     AddDropdown(id: string, options: {
         Title: string;
+        Description?: string;
         Values: string[];
         Multi?: boolean;
         Default?: string;
