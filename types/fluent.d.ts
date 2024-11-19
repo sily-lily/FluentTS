@@ -15,7 +15,7 @@ export interface Fluent {
      */
     Notify(data: {
         Title: string;
-        Content: string;
+        Content?: string;
         SubContent?: string;
         Duration: number;
     }): void;
