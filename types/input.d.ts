@@ -36,5 +36,5 @@ export interface Input {
      * Sets a new value for the input field.
      * @param value - The new value for the input.
      */
-    SetValue(value: number): void;
+    SetValue(value: string | number): void;
 }
