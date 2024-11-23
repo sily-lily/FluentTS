@@ -31,4 +31,10 @@ export interface Input {
      * The current value of the input field. (string or number, depends on Numeric)
      */
     Value: string | number;
+
+    /**
+     * Sets a new value for the input field.
+     * @param value - The new value for the input.
+     */
+    SetValue(value: number): void;
 }
