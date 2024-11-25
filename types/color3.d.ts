@@ -1,4 +1,4 @@
-export class Color3 {
+export class _Color3 {
     r: number;
     g: number;
     b: number;
@@ -6,7 +6,7 @@ export class Color3 {
     constructor(r: number, g: number, b: number);
 
     /**
-     * Create a `Color3` object from RGB values. (red, green, blue)
+     * Create a `_Color3` object from RGB values. (red, green, blue)
      * @param r - Red (0 - 255)
      * @param g - Green
      * @param b - Blue
