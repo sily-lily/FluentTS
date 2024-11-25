@@ -1,5 +1,5 @@
 import { ColorPicker } from './colorpicker';
-import { Color3 } from './color3';
+import { _Color3 } from './color3';
 import { Input } from 'fluentts/types/input';
 import { Dropdown } from 'fluentts/types/dropdown';
 import { Keybind } from 'fluentts/types/keybind';
@@ -32,7 +32,10 @@ export interface Tab {
      * @param id - Identifier for the color picker.
      * @param options - Customizable options for the color picker.
      */
-    AddColorpicker(id: string, options: { Title: string; Default: Color3 }): ColorPicker;
+    AddColorpicker(id: string, options: {
+        Title: string;
+        Default: _Color3
+    }): ColorPicker;
 
     /**
      * Adds an input field to the tab.
