@@ -1,5 +1,3 @@
-import { _Color3 } from "_Color3";
-
 /*
 
     Includes: .SetHSVFromRGB
@@ -13,7 +11,7 @@ import { _Color3 } from "_Color3";
 
 export interface ColorPickerOptions {
     Title: string;     // The title of the color picker.
-    Default?: Color3;  // The default value of the color picker. (optional)
+    Default?: any;  // The default value of the color picker. (optional)
 }
 
 export interface ColorPicker {
