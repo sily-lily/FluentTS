@@ -1,4 +1,4 @@
-import { _Color3 } from "./color3";
+import { _Color3 } from "_Color3";
 
 /*
 
