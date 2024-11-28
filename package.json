@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rbxts/types": "latest",
     "typescript": "^5.6.3"
   }
 }

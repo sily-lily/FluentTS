@@ -1,3 +1,5 @@
+/// <reference types="@rbxts/types" />
+
 /*
 
     Includes: .SetHSVFromRGB
@@ -37,10 +39,10 @@ export interface ColorPicker {
     SetValue(h: number, s: number, v: number): void;
 
     /**
-     * Function that's called when the color value changes.
-     * @param callback - Function that intakes the new HSV values.
-     */
-    OnChanged(callback: (h: number, s: number, v: number) => void): void;
+    * Function that's called when the color value changes.
+    * @param callback - Function that intakes the new HSV values.
+    */
+    OnChanged(callback: (color: Color3) => void): void;
 
     /**
      * Destroy the color picker object.
