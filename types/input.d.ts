@@ -2,6 +2,7 @@
 
     Includes: .OnChanged
               .Destroy
+              .Value
 
 */
 
@@ -17,10 +18,10 @@ export interface InputOptions {
 
 export interface Input {
     /**
-     * Registers a funciton to be called when the input value changes.
+     * Registers a function to be called when the input value changes.
      * @param callback - Function that runs code you tell it to.
      */
-    OnChanged(callback: (value: string) => void): void;
+    OnChanged(callback: (value: string | number) => void): void;
 
     /**
      * Destroys the input object.
@@ -28,9 +29,10 @@ export interface Input {
     Destroy(): void;
 
     /**
-     * The current value of the input field. (string or number, depends on Numeric)
+     * Gets the current value of the input field.
+     * @returns - The current value (string or number, depending on Numeric).
      */
-    Value: string | number;
+    get Value(): string | number;
 
     /**
      * Sets a new value for the input field.
