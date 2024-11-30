@@ -13,12 +13,12 @@
 */
 
 export interface DropdownOptions {
-    Title: string;                                  // The title (header) of the dropdown.
-    Description?: string;                           // The description of the dropdown, explains what it does.
-    Values: string[];                               // Array of values to display in the dropdown.
-    Multi?: boolean;                                // Allow multiple selections. (multiple choices) (optional)
-    Default?: string;                               // Default selected value, by index or value. (optional)
-    Callback: (value: string | number) => void;     // Function that runs code when the input changes.
+    Title: string;                                              // The title (header) of the dropdown.
+    Description?: string;                                       // The description of the dropdown, explains what it does.
+    Values: string[];                                           // Array of values to display in the dropdown.
+    Multi?: boolean;                                            // Allow multiple selections. (multiple choices) (optional)
+    Default?: string;                                           // Default selected value, by index or value. (optional)
+    Callback?: (value: string | number | string[]) => void;     // Function that runs code when the input changes.
 }
 
 export interface Dropdown {
@@ -42,7 +42,7 @@ export interface Dropdown {
      * Returns the currently active values of the dropdown.
      * @returns - An array of active values (if multie is true) or a single active value.
      */
-    GetActiveValues(): string | string[];
+    GetActiveValues(): string | number | string[];
 
     /**
      * Builds the dropdown list based on the provided values.
@@ -59,7 +59,7 @@ export interface Dropdown {
      * Registers a function to be called when the dropdown value changes.
      * @param callback - Customizable function to call when the selected value is changed.
      */
-    OnChanged(callback: (value: string | string[]) => void): void;
+    OnChanged(callback: (value: string | number | string[]) => void): void;
 
     /**
      * Sets the current value of the dropdown.
@@ -72,4 +72,10 @@ export interface Dropdown {
      * Destroys the dropdown object.
      */
     Destroy(): void;
+
+    /**
+     * Gets the currently selected value of the dropdown.
+     * @returns - The current active value, or an array if multiple selections are enabled.
+     */
+    get Value(): string | number | string[];
 }
