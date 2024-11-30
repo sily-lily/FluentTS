@@ -9,6 +9,7 @@
               .OnChanged
               .SetValue
               .Destroy
+              .Value
 
 */
 
