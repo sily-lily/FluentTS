@@ -3,6 +3,7 @@
     Includes: .OnChanged
               .SetValue
               .Destroy
+              .Value
 
 */
 
@@ -33,4 +34,10 @@ export interface Slider {
      * Destroys the slider object.
      */
     Destroy(): void;
+
+    /**
+     * Gets the current value of the slider object.
+     * @returns - The current value (number).
+     */
+    get Value(): number;
 }
