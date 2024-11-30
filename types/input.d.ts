@@ -9,7 +9,7 @@
 export interface InputOptions {
     Title: string;                                  // Title of the input.
     Description?: string;                           // Explains what the input is actually about. (optional)
-    Default?: string;                               // The default value for the input. (optional)
+    Default?: string | number;                      // The default value for the input. (optional)
     Placeholder?: string;                           // Text that shows before a response is added. (optional)
     Numeric?: boolean;                              // Whether numbers-only is allowed. (optional)
     Finished?: boolean;                             // Whether the callback is only triggered by pressing 'enter'. (optional)
