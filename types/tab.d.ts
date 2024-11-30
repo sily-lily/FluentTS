@@ -45,7 +45,7 @@ export interface Tab {
     AddInput(id: string, options: {
         Title: string;
         Description?: string;
-        Default?: string;
+        Default?: string | number;
         Placeholder?: string;
         Numeric?: boolean;
         Finished?: boolean;
