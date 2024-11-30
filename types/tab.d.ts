@@ -34,6 +34,7 @@ export interface Tab {
     AddColorpicker(id: string, options: {
         Title: string;
         Default: any
+        Callback?: (value: Color3) => void;
     }): ColorPicker;
 
     /**
@@ -48,7 +49,7 @@ export interface Tab {
         Placeholder?: string;
         Numeric?: boolean;
         Finished?: boolean;
-        Callback?: (value: string) => void;
+        Callback?: (value: string | number) => void;
     }): Input;
 
     /**
@@ -72,7 +73,7 @@ export interface Tab {
         Values: string[];
         Multi?: boolean;
         Default?: string;
-        Callback: (value: string | number) => void;
+        Callback?: (value: string | number) => void;
     }): Dropdown;
 
     /**
