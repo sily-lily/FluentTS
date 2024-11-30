@@ -41,3 +41,14 @@ tabs.main.AddButton({
     }
 });
 ```
+
+---
+
+### Updates ✨
+
+The latest update **(11/30/2024)** gives you new features and more access to the Fluent UI library!
+
+### Includes:
+1. Full `.Value` support
+2. Better type support (Fixed a bunch of required types)
+3. Actual Colorpicker support
