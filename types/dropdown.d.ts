@@ -10,6 +10,7 @@
               .SetValue
               .Destroy
               .Value
+              .Values
 
 */
 
@@ -70,13 +71,19 @@ export interface Dropdown {
     SetValue(value: string): void;
 
     /**
-     * Destroys the dropdown object.
-     */
-    Destroy(): void;
-
-    /**
      * Gets the currently selected value of the dropdown.
      * @returns - The current active value, or an array if multiple selections are enabled.
      */
     get Value(): string | number | string[];
+
+    /**
+     * Gets all available values in the dropdown.
+     * @returns - An array of all values in the dropdown.
+     */
+    get Values(): string[];
+    
+    /**
+     * Destroys the dropdown object.
+     */
+    Destroy(): void;
 }
