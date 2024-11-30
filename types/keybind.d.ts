@@ -6,15 +6,16 @@
               .OnChanged
               .DoClick
               .Destroy
+              .Value
 
 */
 
 export interface KeybindOptions {
-    Title: string;                                   // The title (header) of the keybind.
-    Mode: "Always" | "Toggle" | "Hold";              // The mode used for the keybind. (no explanation on what they do)
-    Default: string;                                 // The default key for the keybind. (not an Enum, auto converts)
-    Callback: (value: boolean) => void;              // Function called when the keybind is pressed.
-    ChangedCallback: (newKey: string) => void;       // The function called when the keybind changes.
+    Title: string;                                 // The title (header) of the keybind.
+    Mode: "Always" | "Toggle" | "Hold";            // The mode used for the keybind.
+    Default: string;                               // The default key for the keybind. (auto converts, not an Enum)
+    Callback?: (value: boolean) => void;           // Function called when the keybind is pressed.
+    ChangedCallback?: (newKey: string) => void;    // The function called when the keybind changes.
 }
 
 export interface Keybind {
@@ -23,6 +24,12 @@ export interface Keybind {
      * @returns - A boolean indicating whether the keybind is active or not.
      */
     GetState(): boolean;
+
+    /**
+     * Gets the current value of the keybind.
+     * @returns - The current value (string).
+     */
+    get Value(): string;
 
     /**
      * Sets the keybind value and mode.
