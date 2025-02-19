@@ -45,6 +45,7 @@ export interface Tab {
     AddInput(id: string, options: {
         Title: string;
         Description?: string;
+        Locked: boolean;
         Default?: string | number;
         Placeholder?: string;
         Numeric?: boolean;
@@ -59,6 +60,7 @@ export interface Tab {
     AddButton(options: {
         Title: string;
         Description?: string;
+        Locked: boolean;
         Callback: () => void;
     }): void;
 
