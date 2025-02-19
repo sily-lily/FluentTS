@@ -33,7 +33,9 @@ export interface Tab {
      */
     AddColorpicker(id: string, options: {
         Title: string;
-        Default: any
+        Description?: string;
+        Locked?: boolean;
+        Default: any;
         Callback?: (value: Color3) => void;
     }): ColorPicker;
 
@@ -72,6 +74,7 @@ export interface Tab {
     AddDropdown(id: string, options: {
         Title: string;
         Description?: string;
+        Locked?: boolean;
         Values: string[];
         Multi?: boolean;
         Default?: string;
@@ -85,6 +88,7 @@ export interface Tab {
      */
     AddKeybind(id: string, options: {
         Title: string;
+        Description?: string;
         Mode: 'Always' | 'Toggle' | 'Hold';
         Default?: string;
         Callback?: (value: boolean) => void;
@@ -99,6 +103,7 @@ export interface Tab {
     AddToggle(id: string, options: {
         Title: string;
         Description?: string;
+        Locked?: boolean;
         Default?: boolean;
         Callback?: (value: boolean) => void;
     }): Toggle;
@@ -111,6 +116,7 @@ export interface Tab {
     AddSlider(id: string, options: {
         Title: string;
         Description?: string;
+        Locked?: boolean;
         Default: number;
         Min: number;
         Max: number;
