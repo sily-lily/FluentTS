@@ -9,7 +9,7 @@
 export interface InputOptions {
     Title: string;                                  // Title of the input.
     Description?: string;                           // Explains what the input is actually about. (optional)
-    Locked: boolean;                                // Restricts you from using any part of the input.
+    Locked?: boolean;                               // Restricts you from using any part of the input.
     Default?: string | number;                      // The default value for the input. (optional)
     Placeholder?: string;                           // Text that shows before a response is added. (optional)
     Numeric?: boolean;                              // Whether numbers-only is allowed. (optional)
