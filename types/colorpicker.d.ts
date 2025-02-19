@@ -13,9 +13,11 @@
 */
 
 export interface ColorPickerOptions {
-    Title: string;                      // The title of the color picker.
-    Default?: Color3;                   // The default value of the color picker. (optional)
-    Callback?: (color: Color3) => void; // Does an action when a color is changed
+    Title: string;                          // The title of the color picker.
+    Description?: string;                   // Tells you a little about what this color picker does!
+    Locked?: boolean;                       // Entirely prevents you from modifying any colors, etc.
+    Default?: Color3;                       // The default value of the color picker. (optional)
+    Callback?: (color: Color3) => void;     // Does an action when a color is changed
 }
 
 export interface ColorPicker {
