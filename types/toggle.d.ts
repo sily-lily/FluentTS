@@ -9,6 +9,7 @@
 export interface ToggleOptions {
     Title: string;                           // The title (header) of the toggle.
     Description?: string;                    // Explains what the toggle does.
+    Locked?: boolean;                        // Entirely disables all actions related to the toggle.
     Default?: boolean;                       // The default state of the toggle. (true or false)
     Callback: (value: boolean) => void;      // The function that is called when the toggle changes.
 }
