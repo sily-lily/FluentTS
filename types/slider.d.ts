@@ -10,6 +10,7 @@
 export interface SliderOptions {
     Title: string;                          // The title (header) of the slider.
     Description?: string;                   // The description of the slider, what it's about. (optional)
+    Locked?: boolean;                       // Disables the slider and all related actions.
     Default: number;                        // The default (starting) value for the slider. (min through max) (optional)
     Min: number;                            // The minimum value for the slider.
     Max: number;                            //     maximum
