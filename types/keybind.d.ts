@@ -12,6 +12,8 @@
 
 export interface KeybindOptions {
     Title: string;                                 // The title (header) of the keybind.
+    Description?: string;                          // Add a fancy little description telling you what this does.
+    Locked?: boolean;                              // Prevents the user from using the keybind shortcut.
     Mode: "Always" | "Toggle" | "Hold";            // The mode used for the keybind.
     Default: string;                               // The default key for the keybind. (auto converts, not an Enum)
     Callback?: (value: boolean) => void;           // Function called when the keybind is pressed.
