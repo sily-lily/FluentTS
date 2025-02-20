@@ -25,9 +25,5 @@
     },
     "include": [
         "types/*.ts"
-    ],
-    "files": [
-      "./node_modules/typescript/lib/lib.es5.d.ts",
-      "./node_modules/@rbxts/types/plugin.d.ts"
     ]
 }
