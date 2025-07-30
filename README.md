@@ -4,7 +4,7 @@ TypeScript types for Roblox-TS, allowing you to effectively use the Fluent libra
 ### 🔌 Installation
 
 ```
-npm install --save-dev github:mr-suno/fluentTS
+npm install --save-dev github:sily-lily/fluentTS
 ```
 
 ---
@@ -14,7 +14,7 @@ npm install --save-dev github:mr-suno/fluentTS
 You can import the Fluent library using the code below,
 along with creating a tab:
 ```ts
-const fluent = load_url('https://github.com/mr-suno/Fluent/releases/latest/download/main.lua') as Fluent;
+const fluent = load_url('https://github.com/sily-lily/Fluent/releases/latest/download/main.lua') as Fluent;
 
 const window = fluent.CreateWindow({
     'Title': 'Your Script',                         // Title of your library
